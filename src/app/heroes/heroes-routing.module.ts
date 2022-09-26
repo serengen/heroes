@@ -9,6 +9,7 @@ import { ListadoComponent } from './pages/listado/listado.component';
 const routes: Routes=[
   {
     path: '',
+    component: HomeComponent,
     children:[
       {
         path: 'listado',
@@ -32,7 +33,7 @@ const routes: Routes=[
       },
       {
         path: '**',
-        redirectTo: 'listado'
+        redirectTo: ''
       }
     ]
   }
